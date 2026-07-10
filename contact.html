@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | The Getback Machine</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Yellowtail&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+
+body{
+
+margin:0;
+
+background:#f4e3c1;
+
+font-family:'Quicksand',sans-serif;
+
+color:#4b321f;
+
+overflow-x:hidden;
+
+}
+
+
+
+/* HEADER */
+
+
+.hero{
+
+height:520px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+.hero-image{
+
+position:absolute;
+
+inset:-60px;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.3),
+rgba(0,0,0,.3)
+),
+
+url("PsDDD.jpeg");
+
+
+background-size:cover;
+
+background-position:center;
+
+filter:blur(10px);
+
+transform:scale(1.12);
+
+z-index:0;
+
+}
+
+
+
+.hero:after{
+
+content:"";
+
+position:absolute;
+
+width:160%;
+
+height:5px;
+
+background:#ffd27a;
+
+opacity:.45;
+
+filter:blur(5px);
+
+top:30%;
+
+left:-30%;
+
+transform:rotate(-8deg);
+
+animation:trace 6s linear infinite;
+
+z-index:1;
+
+}
+
+
+
+@keyframes trace{
+
+from{
+transform:translateX(-30%) rotate(-8deg);
+}
+
+to{
+transform:translateX(30%) rotate(-8deg);
+}
+
+}
+
+
+
+.hero-box{
+
+position:relative;
+
+z-index:2;
+
+background:rgba(201,106,45,.88);
+
+padding:55px 70px;
+
+border-radius:35px;
+
+text-align:center;
+
+box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+}
+
+
+
+.hero h1{
+
+font-family:'Monoton',cursive;
+
+font-size:4rem;
+
+font-weight:400;
+
+color:#ffe7b3;
+
+margin:0;
+
+}
+
+
+
+.hero p{
+
+font-family:'Yellowtail',cursive;
+
+font-size:2.5rem;
+
+color:#fff2dc;
+
+}
+
+
+
+/* CONTACT */
+
+
+.container{
+
+max-width:900px;
+
+margin:auto;
+
+padding:80px 25px;
+
+text-align:center;
+
+}
+
+
+
+.contact-box{
+
+background:#fff1d2;
+
+padding:50px;
+
+border-radius:35px;
+
+box-shadow:0 12px 25px rgba(70,40,15,.15);
+
+}
+
+
+
+.contact-box h2{
+
+font-family:'Yellowtail',cursive;
+
+font-size:60px;
+
+color:#8d421f;
+
+margin-top:0;
+
+}
+
+
+
+.contact-box p{
+
+font-size:22px;
+
+line-height:2;
+
+}
+
+
+
+.contact-box a{
+
+color:#b45727;
+
+font-weight:bold;
+
+text-decoration:none;
+
+}
+
+
+
+.contact-box a:hover{
+
+text-decoration:underline;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#24150e;
+
+color:#f5dfb3;
+
+padding:50px 25px;
+
+margin-top:70px;
+
+}
+
+
+
+.footer-grid{
+
+max-width:1150px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+gap:40px;
+
+}
+
+
+
+footer h3{
+
+color:#e49a50;
+
+}
+
+
+
+footer a{
+
+display:block;
+
+color:#f5dfb3;
+
+text-decoration:none;
+
+margin:12px 0;
+
+}
+
+
+
+.bottom{
+
+text-align:center;
+
+margin-top:40px;
+
+opacity:.7;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<section class="hero">
+
+
+<div class="hero-image" id="heroImage"></div>
+
+
+<div class="hero-box" id="heroBox">
+
+<h1>The Getback Machine</h1>
+
+<p>
+Don't just look at the past, hold it in your hands.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<div class="container">
+
+
+<div class="contact-box">
+
+
+<h2>Contact Us</h2>
+
+
+<p>
+
+Phone:
+
+<br>
+
+<strong>256-339-3279</strong>
+
+<br><br>
+
+
+Email:
+
+<br>
+
+
+<a href="mailto:Getbackmachine@gmail.com">
+
+Getbackmachine@gmail.com
+
+</a>
+
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<footer>
+
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>The Getback Machine</h3>
+
+<a href="index.html">Home</a>
+
+<a href="#">Who Are We</a>
+
+<a href="contact.html">Contact Us</a>
+
+</div>
+
+
+
+<div>
+
+<h3>Shop</h3>
+
+<a href="YOUR_EBAY_STORE_LINK">
+
+eBay Store
+
+</a>
+
+<a href="YOUR_EBAY_LISTINGS_LINK">
+
+All Listings
+
+</a>
+
+<a href="https://www.ebay.com/usr/getback-machine">
+
+Seller Profile
+
+</a>
+
+</div>
+
+
+
+<div>
+
+<h3>Connect</h3>
+
+<a href="#">Instagram</a>
+
+<a href="#">Facebook</a>
+
+<a href="mailto:Getbackmachine@gmail.com">
+
+Email
+
+</a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="bottom">
+
+© 2026 The Getback Machine. All rights reserved.
+
+</div>
+
+
+</footer>
+
+
+
+
+
+<script>
+
+
+const image =
+document.getElementById("heroImage");
+
+const box =
+document.getElementById("heroBox");
+
+
+
+window.addEventListener("scroll",()=>{
+
+
+let y =
+window.scrollY;
+
+
+
+image.style.transform =
+
+`
+
+scale(1.12)
+
+translate(
+${Math.sin(y/400)*15}px,
+${y*.12}px
+)
+
+`;
+
+
+
+box.style.transform =
+
+`
+
+translateY(${y*-.18}px)
+
+`;
+
+
+
+});
+
+
+</script>
+
+
+
+</body>
+</html>
